@@ -1,10 +1,17 @@
 use std::io;
 
 fn main () {
+	let mut count = 0;
+	
 
-	for i in 0..100 {
-		println!("\nPatient Record:{}", i + 1);
-	}
+	while count =< 50 {
+		count+=1;
+
+		if count = 50 {
+			break;
+		}
+
+    }
 
 	println!("\nEnter your name");
     let mut name = String::new();

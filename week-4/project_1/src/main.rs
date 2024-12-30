@@ -36,7 +36,7 @@ fn main() {
     }
 
     else {
-        println!("There is no real roots");
+        println!("There are no real roots");
     }
 
 }

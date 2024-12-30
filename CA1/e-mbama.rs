@@ -31,13 +31,7 @@ for i in 0..sibling_number {
     io::stdin().read_line(&mut first_name).expect("Failed to read input");
     let marriage = marriage.trim().to_lowercase();
     
-    let marriage:bool = if marriage { "yes" } .
-        true
-    } else {
-        false
-    };
-
-    if marriage == true {
+    if marriage == "yes" {
     	
     	println!("Do you have any children?");
     	let mut children = String::new();
@@ -64,7 +58,7 @@ for i in 0..sibling_number {
      	let mut school_name = String::new();
     io::stdin().read_line(&mut school_name).expect("Failed to read input");
 
-    } else if marriage == false {
+    } else if marriage == "no" {
 
 	println!("Are you a student or employed?");
 	let mut answer = String::new();
@@ -89,10 +83,6 @@ for i in 0..sibling_number {
     io::stdin().read_line(&mut year).expect("Failed to read input");
     let year:i32 = year.trim().parse().expect("Input is invalid");
     } 
-
-     } 
-    else {
-     	println!("Invalid input");
 
     } 
     else {
@@ -119,9 +109,10 @@ for i in 0..sibling_number {
      }
 
 
-     
+       }
 
    
    
+}
 
 
